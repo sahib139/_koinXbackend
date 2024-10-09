@@ -32,10 +32,7 @@ const fetchCryptoData = async () => {
 };
 
 // Schedule the cron job to run every 2 hours
-cron.schedule('* * * * *', async () => {
-  console.log('Fetching and adding cryptocurrency data...');
-  await fetchCryptoData();
+cron.schedule('0 */2 * * *', async () => {
+    console.log('Fetching and adding cryptocurrency data...');
+    await fetchCryptoData();
 });
-
-
-// fetchCryptoData();
