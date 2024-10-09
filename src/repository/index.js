@@ -1,3 +1,3 @@
 module.exports = {
-    CryptocRepository:require("./crypto-repository"),
+    CryptoRepository:require("./crypto-repository"),
 }

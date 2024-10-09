@@ -4,7 +4,6 @@ const cryptoSchema = mongoose.Schema({
     coin:{
         type: String,
         required: true,
-        unique: true,
     },
     price:{
         type: Number,
@@ -23,7 +22,8 @@ const cryptoSchema = mongoose.Schema({
     timestamps: true,
 });
 
+cryptoSchema.index({ createdAt: 1 });
 
-const Crypto = mongoose.model('crypto',UserSchema);
+const Crypto = mongoose.model('crypto',cryptoSchema);
 
 module.exports = Crypto;
