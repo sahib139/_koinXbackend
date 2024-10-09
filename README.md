@@ -7,7 +7,9 @@ This project is a server-side application built with Node.js and MongoDB to fetc
 - **Background Job**: A cron job runs every 2 hours to fetch and store the latest price, market cap, and 24-hour change for Bitcoin, Ethereum, and Matic.
 - **API Endpoints**:
   - `/stats`: Fetch the latest data for a requested cryptocurrency.
+    - curl -X GET "13.60.19.44:6901/api/v1/stats?coin=bitcoin"
   - `/deviation`: Fetch the standard deviation of the cryptocurrency's price for the last 100 records stored in the database.
+    - curl -X GET "13.60.19.44:6901/api/v1/deviation?coin=bitcoin"
 
 
 1. Clone the repository:
