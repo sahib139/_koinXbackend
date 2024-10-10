@@ -11,12 +11,12 @@ This project is a server-side application built with Node.js and MongoDB to fetc
   - `/deviation`: Fetch the standard deviation of the cryptocurrency's price for the last 100 records stored in the database.
     - curl -X GET "13.60.19.44:6901/api/v1/deviation?coin=bitcoin"
 
-
-1. Clone the repository:
-   git clone https://github.com/your-username/crypto-tracker.git
-2. go to root folder of your repository
-3. RUN `npm install`
-4. Create .env file with the following environment
+## Local SetUp
+- Clone the repository:
+    - git clone https://github.com/your-username/crypto-tracker.git
+- go to root folder of your repository
+- RUN `npm install`
+- Create .env file with the following environment
     - mongodb_url="YOUR_MONGODB_URL"
     - PORT=6901
-5. RUN `npm run dev`
+- RUN `npm run dev`
